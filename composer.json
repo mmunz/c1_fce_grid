@@ -1,0 +1,16 @@
+{
+  "name": "mmunz/c1_fce_grid",
+  "type": "typo3-cms-extension",
+  "version": "0.1.1",
+  "description": "A collection of bootstrap grid elements written for EXT:fluidcontent using ViewHelpers from EXT:vhs",
+  "keywords": ["typo3", "TYPO3 CMS", "bootstrap"],
+  "homepage": "https://github.com/mmunz/c1_fce_grid",
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "Manuel Munz",
+      "email": "t3@comuno.net",
+      "role": "Developer"
+    }
+  ]
+}
