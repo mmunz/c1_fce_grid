@@ -1,0 +1,15 @@
+plugin.tx_c1fcegrid{
+	view {
+		label = Bootstrap Grid Elements
+		extensionKey = c1_fce_grid
+		partialRootPath = EXT:flux/Resources/Private/Partials/
+		layoutRootPath = EXT:fluidcontent/Resources/Private/Layouts/
+	}
+    settings {
+        gridColumns = {$plugin.tx_c1fcegrid.settings.gridColumns}
+    }
+}
+
+lib.fluidContent.templateRootPaths.50 = EXT:c1_fce_grid/Resources/Private/Templates/Content
+#lib.fluidContent.partialRootPaths.50 = EXT:c1_fce_grid/Resources/Private/Partials/
+#lib.fluidContent.layoutRootPaths.50 = EXT:c1_fce_grid/Resources/Private/Layouts/

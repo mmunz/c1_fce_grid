@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2015-08-29T11:37:59Z">
+        <header>
+            <type>module</type>
+            <description>Language labels for the c1_Fce_grid Fluid Content Elements extension</description>
+            <generator>LFEditor</generator>
+        </header>
+        <body>
+            <trans-unit id="flux.row" xml:space="preserve">
+				<source>Bootstrap: Column Row</source>
+			</trans-unit>
+            <trans-unit id="flux.row.description" xml:space="preserve">
+				<source>Adds a wrapper element that lets you define columns of varying widths</source>
+			</trans-unit>
+            <trans-unit id="flux.row.fields.breakpoint" xml:space="preserve">
+				<source>Breakpoint</source>
+			</trans-unit>
+            <trans-unit id="flux.row.fields.equal_height" xml:space="preserve">
+				<source>Equal height</source>
+			</trans-unit>
+            <trans-unit id="flux.row.sections.columns" xml:space="preserve">
+				<source>Columns</source>
+			</trans-unit>
+            <trans-unit id="flux.row.objects.column" xml:space="preserve">
+				<source>Column</source>
+			</trans-unit>
+            <trans-unit id="flux.row.objects.column" xml:space="preserve">
+				<source>Column</source>
+			</trans-unit>
+        </body>
+    </file>
+</xliff>

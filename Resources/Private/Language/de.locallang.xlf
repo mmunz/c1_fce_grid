@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2015-08-29T11:37:59Z">
+        <header>
+            <type>module</type>
+            <description>Language labels for the c1_Fce_grid Fluid Content Elements extension</description>
+            <generator>LFEditor</generator>
+        </header>
+        <body>
+            <trans-unit id="flux.row" xml:space="preserve" approved="yes">
+				<source>Bootstrap Spalten</source>
+			<target state="translated">Bootstrap Spalten</target></trans-unit>
+            <trans-unit id="flux.row.description" xml:space="preserve" approved="yes">
+				<source>Adds a wrapper element that lets you define columns of varying widths</source>
+			<target state="translated">Mit diesem Element können Spalten mit unterschiedlicher Breite erstellt werden.</target></trans-unit>
+            <trans-unit id="flux.row.fields.breakpoint" xml:space="preserve" approved="yes">
+				<source>Breakpoint</source>
+			<target state="translated">Breakpoint</target></trans-unit>
+            <trans-unit id="flux.row.fields.equal_height" xml:space="preserve" approved="yes">
+				<source>Equal height</source>
+			<target state="translated">Gleiche Höhe für Spalten</target></trans-unit>
+            <trans-unit id="flux.row.sections.columns" xml:space="preserve" approved="yes">
+				<source>Columns</source>
+			<target state="translated">Spalten</target></trans-unit>
+            <trans-unit id="flux.row.objects.column" xml:space="preserve" approved="yes">
+				<source>Column</source>
+			<target state="translated">Spalte</target></trans-unit>
+            <trans-unit id="flux.row.objects.column" xml:space="preserve" approved="yes">
+				<source>Column</source>
+			<target state="translated">Spalte</target></trans-unit>
+        </body>
+    </file>
+</xliff>
