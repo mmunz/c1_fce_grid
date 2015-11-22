@@ -1,5 +1,5 @@
 {
-  "name": "mmunz/c1_fce_grid",
+  "name": "mmunz/c1-fce-grid",
   "type": "typo3-cms-extension",
   "version": "0.1.1",
   "description": "A collection of bootstrap grid elements written for EXT:fluidcontent using ViewHelpers from EXT:vhs",
