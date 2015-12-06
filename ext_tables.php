@@ -4,4 +4,4 @@ if (!defined ('TYPO3_MODE')) {
 }
 
 TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript', 'Bootstrap Grid Elements');
-\FluidTYPO3\Flux\Core::registerProviderExtensionKey('C1FceGrid', 'Content');
+FluidTYPO3\Flux\Core::registerProviderExtensionKey('C1.C1FceGrid', 'Content');

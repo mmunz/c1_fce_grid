@@ -12,11 +12,13 @@
 
         <flux:form id="row" options="{icon:'{icon}', group: 'Container'}">
             <flux:field.select name="breakpoint" items="xs,sm,md,lg" default="md" />
+            <flux:field.select name="additionalCssClasses" items="{settings.row.additionalCssClasses}" multiple='true' renderMode='checkbox' maxItems="9" />
             <flux:field.checkbox name="equal_height" default="0" />
             <flux:form.section name="columns">
                 <flux:form.object name="column" label="{f:translate(key:'flux.row.objects.column')}">
                     <flux:field.select name="cols" items="{f:render(section: 'Value', arguments: {iteration: iteration})
                                        -> v:iterator.loop(count: numberOfColumns, iteration: 'iteration', minimum: 1)}" label="{f:translate(key:'flux.row.sections.columns')}" />
+                    <flux:field.select name="bgColor" items="{settings.row.bgColors}" emptyOption="None"/>
                 </flux:form.object>
             </flux:form.section>
             <flux:grid>
@@ -33,9 +35,9 @@
     </f:section>
 
     <f:section name="Main">
-        <div class="row{f:if(condition:'{equal_height}==1',then:' equal-height')}">
+        <div class="row{f:if(condition:'{equal_height}==1',then:' row-flex row-flex-wrap')}{f:if(condition: '{cssClasses}', then: ' {cssClasses}')}">
             <f:for each="{columns}" as="sectionObject" iteration="iteration">
-                <div class="col-{breakpoint}-{sectionObject.column.cols}">
+                <div class="col-{breakpoint}-{sectionObject.column.cols}{f:if(condition: sectionObject.column.bgColor, then: ' bg-{sectionObject.column.bgColor}')}">
                     <flux:content.render area="column{iteration.cycle}" />
                 </div>
             </f:for>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2015-11-26T10:37:59Z">
+        <header>
+            <type>module</type>
+            <description>Language labels for the Providers RTE configuration</description>
+            <generator>LFEditor</generator>
+        </header>
+        <body>
+            <trans-unit id="checkmark" xml:space="preserve">
+				<source>Checkmark</source>
+			</trans-unit>
+        </body>
+    </file>
+</xliff>

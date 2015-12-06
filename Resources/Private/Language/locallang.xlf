@@ -7,12 +7,49 @@
             <generator>LFEditor</generator>
         </header>
         <body>
+            <!-- container -->
+            <trans-unit id="flux.container">
+                <source>Container</source>
+            </trans-unit>
+            <trans-unit id="flux.container.description" xml:space="preserve">
+                <source>Container - max-width and center or padding</source>
+            </trans-unit>
+            <trans-unit id="flux.container.fields.settings.container.width" xml:space="preserve">
+                <source>Style/Width</source>
+            </trans-unit>
+            <trans-unit id="flux.container.fields.settings.container.bgColor" xml:space="preserve">
+                <source>Background Color</source>
+            </trans-unit>
+            <trans-unit id="flux.container.columns.content" xml:space="preserve">
+                <source>Content</source></trans-unit>
+            <trans-unit id="flux.container.fields.noMargin" xml:space="preserve">
+                <source>No margin after this content element</source>
+            </trans-unit>
+            <trans-unit id="flux.container.fields.paddingTop" xml:space="preserve">
+                <source>Padding Top</source>
+            </trans-unit>
+            <trans-unit id="flux.container.fields.paddingLeft" xml:space="preserve">
+                <source>Padding Left</source>
+            </trans-unit>
+            <trans-unit id="flux.container.fields.paddingBottom" xml:space="preserve">
+                <source>Padding Bottom</source>
+            </trans-unit>
+            <trans-unit id="flux.container.fields.paddingRight" xml:space="preserve">
+                <source>Padding Right</source>
+            </trans-unit>
+            <!-- row -->
             <trans-unit id="flux.row" xml:space="preserve">
 				<source>Bootstrap: Column Row</source>
 			</trans-unit>
             <trans-unit id="flux.row.description" xml:space="preserve">
 				<source>Adds a wrapper element that lets you define columns of varying widths</source>
 			</trans-unit>
+            <trans-unit id="flux.row.fields.settings.row.bgColor" xml:space="preserve">
+                <source>Background Color</source>
+            </trans-unit>
+            <trans-unit id="flux.row.fields.additionalCssClasses" xml:space="preserve">
+                <source>Css Classes</source>
+            </trans-unit>
             <trans-unit id="flux.row.fields.breakpoint" xml:space="preserve">
 				<source>Breakpoint</source>
 			</trans-unit>

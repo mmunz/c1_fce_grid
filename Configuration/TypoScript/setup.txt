@@ -1,3 +1,4 @@
+[GLOBAL]
 plugin.tx_c1fcegrid{
 	view {
 		label = Bootstrap Grid Elements
@@ -7,9 +8,34 @@ plugin.tx_c1fcegrid{
 	}
     settings {
         gridColumns = {$plugin.tx_c1fcegrid.settings.gridColumns}
+        container {
+            widths {
+                small = Small
+                medium = Medium
+                large = Large
+                full = Full screen width
+            }
+            bgColors {
+                color1 = White
+                color2 = Gray
+                color3 = Magenta
+                color4 = Blue
+            }
+        }
+        row {
+            bgColors < plugin.tx_c1fcegrid.settings.container.bgColors
+            additionalCssClasses {
+                no-margin = No negative margin. Use with columns with background.
+                test = test
+            }
+        }
     }
 }
 
-lib.fluidContent.templateRootPaths.50 = EXT:c1_fce_grid/Resources/Private/Templates/Content
+page.includeCSS {
+    c1_fce_grid = {$plugin.tx_c1fcegrid.settings.assets.css.c1_fce_grid}
+}
+
+#lib.fluidContent.templateRootPaths.50 = EXT:c1_fce_grid/Resources/Private/Templates/Content
 #lib.fluidContent.partialRootPaths.50 = EXT:c1_fce_grid/Resources/Private/Partials/
 #lib.fluidContent.layoutRootPaths.50 = EXT:c1_fce_grid/Resources/Private/Layouts/

@@ -2,10 +2,11 @@
 
 namespace C1\C1FceGrid\Controller;
 
-/* * *************************************************************
+
+/***************************************************************
  *  Copyright notice
  *
- *  (c) 2015 Manuel Munz <munz@comuno.net>
+ *  (c) 2015 info@augsburg.freifunk.net <>
  *
  *  All rights reserved
  *
@@ -24,36 +25,29 @@ namespace C1\C1FceGrid\Controller;
  *  GNU General Public License for more details.
  *
  *  This copyright notice MUST APPEAR in all copies of the script!
- * ************************************************************* */
+ ***************************************************************/
 
-use FluidTYPO3\Flux\Controller\AbstractFluxController;
-use FluidTYPO3\Flux\Utility\RecursiveArrayUtility;
+use FluidTYPO3\Fluidcontent\Controller\ContentController as AbstractController;
+//use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 /**
  * Content Controller
  *
  * @route off
  */
-class ContentController extends AbstractFluxController {
-
-    /**
-     * @return void
-     */
-    protected function initializeViewVariables() {
-        $row = $this->getRecord();
-        $form = $this->provider->getForm($row);
-       
-        $generalSettings = $this->configurationService->convertFlexFormContentToArray($row['pi_flexform'], $form);
-        $contentSettings = $this->configurationService->convertFlexFormContentToArray($row['content_options'], $form);
-        $this->settings = RecursiveArrayUtility::merge($this->settings, $generalSettings, FALSE, FALSE);
-        if (FALSE === isset($this->settings['content'])) {
-            $this->settings['content'] = $contentSettings;
-        } else {
-            $this->settings['content'] = RecursiveArrayUtility::merge($this->settings['content'], $contentSettings);
-        }
-        parent::initializeViewVariables();
+class ContentController extends AbstractController {
+	/**
+	 * @return void
+	 */
+	public function containerAction() {
+        //$this->includeStylesheets();
     }
 
+    /**
+	 * @return void
+	 */
     public function rowAction() {
+        $cssClasses = str_replace(",", " ", $this->settings['additionalCssClasses']);
+        $this->view->assign('cssClasses', $cssClasses);
     }
 }
