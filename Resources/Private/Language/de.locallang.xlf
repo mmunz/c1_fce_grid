@@ -7,12 +7,54 @@
             <generator>LFEditor</generator>
         </header>
         <body>
-            <trans-unit id="flux.row" xml:space="preserve" approved="yes">
-				<source>Bootstrap Spalten</source>
-			<target state="translated">Bootstrap Spalten</target></trans-unit>
+            <!-- container -->
+            <trans-unit id="flux.container">
+                <source>Container</source> <target></target></trans-unit>
+            <trans-unit id="flux.container.description" xml:space="preserve" approved="yes">
+                <source>Container - max-width and center or padding</source>
+            <target state="translated">Container mit einstellbarer Breite und weiteren Einstellungsmöglichkeiten</target></trans-unit>
+            <trans-unit id="flux.container.fields.settings.container.width" xml:space="preserve" approved="yes">
+                <source>Style/Width</source>
+            <target state="translated">Style/Breite</target></trans-unit>
+            <trans-unit id="flux.container.fields.settings.container.bgColor" xml:space="preserve" approved="yes">
+                <source>Background Color</source>
+            <target state="translated">Hintergrundfarbe</target></trans-unit>
+            <trans-unit id="flux.container.fields.settings.container.id" xml:space="preserve" approved="yes">
+                <source>Container ID</source>
+            <target state="translated">ID des Containers</target></trans-unit>
+            <trans-unit id="flux.container.fields.settings.container.id.placeholder" xml:space="preserve" approved="yes">
+                <source>If left empty an ID is automatically generated.</source>
+            <target state="translated">Wenn leer wird automatisch eine ID generiert</target></trans-unit>
+            <trans-unit id="flux.container.columns.content" xml:space="preserve" approved="yes">
+                <source>Content</source><target state="translated">Inhalt</target></trans-unit>
+            <trans-unit id="flux.container.fields.noMargin" xml:space="preserve" approved="yes">
+                <source>No margin after this content element</source>
+            <target state="translated">Keinen Abstand nach diesem Element</target></trans-unit>
+            <trans-unit id="flux.container.fields.paddingTop" xml:space="preserve" approved="yes">
+                <source>Padding Top</source>
+            <target state="translated">Innenabstand oben</target></trans-unit>
+            <trans-unit id="flux.container.fields.paddingLeft" xml:space="preserve" approved="yes">
+                <source>Padding Left</source>
+            <target state="translated">Innenabstand links</target></trans-unit>
+            <trans-unit id="flux.container.fields.paddingBottom" xml:space="preserve" approved="yes">
+                <source>Padding Bottom</source>
+            <target state="translated">Innenabstand unten</target></trans-unit>
+            <trans-unit id="flux.container.fields.paddingRight" xml:space="preserve" approved="yes">
+                <source>Padding Right</source>
+            <target state="translated">Innenabstand rechts</target></trans-unit>
+            <!-- row -->
+            <trans-unit id="flux.row" xml:space="preserve" approved="no">
+				<source>Bootstrap: Column Row</source>
+			<target state="needs-translation">Bootstrap Spalten</target></trans-unit>
             <trans-unit id="flux.row.description" xml:space="preserve" approved="yes">
 				<source>Adds a wrapper element that lets you define columns of varying widths</source>
 			<target state="translated">Mit diesem Element können Spalten mit unterschiedlicher Breite erstellt werden.</target></trans-unit>
+            <trans-unit id="flux.row.fields.settings.row.bgColor" xml:space="preserve" approved="yes">
+                <source>Background Color</source>
+            <target state="translated">Hintergrund</target></trans-unit>
+            <trans-unit id="flux.row.fields.additionalCssClasses" xml:space="preserve" approved="yes">
+                <source>Css Classes</source>
+            <target state="translated">Css Klassen</target></trans-unit>
             <trans-unit id="flux.row.fields.breakpoint" xml:space="preserve" approved="yes">
 				<source>Breakpoint</source>
 			<target state="translated">Breakpoint</target></trans-unit>
