@@ -20,6 +20,12 @@
             <trans-unit id="flux.container.fields.settings.container.bgColor" xml:space="preserve">
                 <source>Background Color</source>
             </trans-unit>
+            <trans-unit id="flux.container.fields.settings.container.id" xml:space="preserve">
+                <source>Container ID</source>
+            </trans-unit>
+            <trans-unit id="flux.container.fields.settings.container.id.placeholder" xml:space="preserve">
+                <source>If left empty an ID is automatically generated.</source>
+            </trans-unit>
             <trans-unit id="flux.container.columns.content" xml:space="preserve">
                 <source>Content</source></trans-unit>
             <trans-unit id="flux.container.fields.noMargin" xml:space="preserve">

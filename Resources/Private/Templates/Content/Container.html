@@ -12,6 +12,7 @@
 		<flux:form id="container" options="{icon:'{icon}', group: 'Container'}">
 			<flux:field.select name="settings.container.width" items="{settings.container.widths}" requestUpdate="1" default="large" />
             <flux:field.select name="settings.container.bgColor" items="{settings.container.bgColors}" emptyOption="None" />
+            <flux:field.input name="settings.container.id" placeholder="{f:translate(key: 'flux.container.fields.settings.container.id.placeholder')}" />
             <f:comment>
 			<flux:field.checkbox name="paddingTop" displayCond="<![CDATA[FIELD:width:=:padding]]>" />
 			<flux:field.checkbox name="paddingLeft" default="1" displayCond="<![CDATA[FIELD:width:=:padding]]>" />
@@ -42,7 +43,9 @@
 		<f:if condition='{paddingRight}==1'>
 			<v:variable.set name="paddings" value="{paddings} pr"/>
 		</f:if>
-		<section id="c{record.uid}" class="section-container {settings.container.width}{f:if(condition: settings.container.bgColor, then: ' bg-{settings.container.bgColor}')} {paddings}{f:if(condition:'{noMargin}==1',then:' no-margin')}">
+		<section
+            id="{f:if(condition: settings.container.id, then: settings.container.id, else: 'c{record.uid}')}"
+            class="section-container {settings.container.width}{f:if(condition: settings.container.bgColor, then: ' bg-{settings.container.bgColor}')} {paddings}{f:if(condition:'{noMargin}==1',then:' no-margin')}">
     		<flux:content.render area="content" />
 		</section>
 	</f:section>
