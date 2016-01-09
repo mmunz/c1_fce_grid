@@ -19,6 +19,7 @@
                     <flux:field.select name="cols" items="{f:render(section: 'Value', arguments: {iteration: iteration})
                                        -> v:iterator.loop(count: numberOfColumns, iteration: 'iteration', minimum: 1)}" label="{f:translate(key:'flux.row.sections.columns')}" />
                     <flux:field.select name="bgColor" items="{settings.row.bgColors}" emptyOption="None"/>
+                    <flux:field.checkbox name="center_vertical" default="0" />
                 </flux:form.object>
             </flux:form.section>
             <flux:grid>
@@ -37,7 +38,7 @@
     <f:section name="Main">
         <div class="row{f:if(condition:'{equal_height}==1',then:' row-flex row-flex-wrap')}{f:if(condition: '{cssClasses}', then: ' {cssClasses}')}">
             <f:for each="{columns}" as="sectionObject" iteration="iteration">
-                <div class="col-{breakpoint}-{sectionObject.column.cols}{f:if(condition: sectionObject.column.bgColor, then: ' bg-{sectionObject.column.bgColor}')}">
+                <div class="col-{breakpoint}-{sectionObject.column.cols}{f:if(condition: sectionObject.column.center_vertical,then:' center-vert')}{f:if(condition: sectionObject.column.bgColor, then: ' bg-{sectionObject.column.bgColor}')}">
                     <flux:content.render area="column{iteration.cycle}" />
                 </div>
             </f:for>

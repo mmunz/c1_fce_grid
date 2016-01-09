@@ -50,7 +50,7 @@
             <trans-unit id="flux.row.description" xml:space="preserve">
 				<source>Adds a wrapper element that lets you define columns of varying widths</source>
 			</trans-unit>
-            <trans-unit id="flux.row.fields.settings.row.bgColor" xml:space="preserve">
+            <trans-unit id="flux.row.sections.bgColor" xml:space="preserve">
                 <source>Background Color</source>
             </trans-unit>
             <trans-unit id="flux.row.fields.additionalCssClasses" xml:space="preserve">
@@ -70,6 +70,9 @@
 			</trans-unit>
             <trans-unit id="flux.row.objects.column" xml:space="preserve">
 				<source>Column</source>
+			</trans-unit>
+            <trans-unit id="flux.row.columns.column.center_vertical" xml:space="preserve">
+				<source>Center divs in columns vertically</source>
 			</trans-unit>
         </body>
     </file>

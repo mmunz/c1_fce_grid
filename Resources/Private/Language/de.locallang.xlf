@@ -70,6 +70,10 @@
             <trans-unit id="flux.row.objects.column" xml:space="preserve" approved="yes">
 				<source>Column</source>
 			<target state="translated">Spalte</target></trans-unit>
+            <trans-unit id="flux.row.fields.settings.row.center_vertical" xml:space="preserve">
+				<source>Center divs in columns vertically</source>
+                <target>Innerhalb Columns vertikal zentrieren</target>
+			</trans-unit>
         </body>
     </file>
 </xliff>
