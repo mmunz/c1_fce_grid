@@ -5,9 +5,11 @@ plugin.tx_c1fcegrid{
 		extensionKey = c1_fce_grid
 		partialRootPath = EXT:flux/Resources/Private/Partials/
 		layoutRootPath = EXT:fluidcontent/Resources/Private/Layouts/
+        templateRootPaths.c1_fce_grid = {$plugin.tx_c1fcegrid.view.templateRootPath}
 	}
     settings {
         gridColumns = {$plugin.tx_c1fcegrid.settings.gridColumns}
+        framework = {$plugin.tx_c1fcegrid.settings.framework}
         container {
             widths {
                 small = Small
@@ -24,9 +26,24 @@ plugin.tx_c1fcegrid{
         }
         row {
             bgColors < plugin.tx_c1fcegrid.settings.container.bgColors
+            breakpoints {
+                bootstrap3 {
+                    xs = xs (< 768px)
+                    sm = sm (768px - 991px)
+                    md = lg (992px - 1199px)
+                    lg = lg (> 1200px)
+                }
+                bootstrap4 {
+                    xs = xs (< 480px)
+                    sm = sm (480px - 767px)
+                    md = md (768px - 991px)
+                    lg = lg (992px - 1199px)
+                    xl = xl (> 1200px)
+                }
+            }
             additionalCssClasses {
                 no-margin = No negative margin. Use with columns with background.
-                test = test
+                #test = test
             }
         }
     }

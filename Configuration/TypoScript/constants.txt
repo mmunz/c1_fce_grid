@@ -1,9 +1,16 @@
-plugin.tx_c1fcegrid.settings {
-	# Number of grid columns: Set this to the same number used in your custom Bootstrap CSS if you've switched from the default 12-grid
-    gridColumns = 12
-    assets {
-        css {
-            c1_fce_grid = EXT:c1_fce_grid/Resources/Public/Stylesheets/c1_fce_grid.css
+plugin.tx_c1fcegrid {
+    view {
+        templateRootPath = EXT:c1_fce_grid/Resources/Private/Templates/
+    }
+    settings {
+        # Number of grid columns: Set this to the same number used in your custom Bootstrap CSS if you've switched from the default 12-grid
+        gridColumns = 12
+        # bootstrap3 or bootstrap4
+        framework = bootstrap4
+        assets {
+            css {
+                c1_fce_grid = EXT:c1_fce_grid/Resources/Public/Stylesheets/c1_fce_grid.css
+            }
         }
     }
 }

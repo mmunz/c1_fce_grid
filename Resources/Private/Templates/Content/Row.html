@@ -8,10 +8,19 @@
 
     <f:section name="Configuration">
         {f:if(condition: settings.gridColumns, then: settings.gridColumns, else: 12) -> v:variable.set(name: 'numberOfColumns')}
+        <f:switch expression="{settings.framework}">
+            <f:case value="bootstrap3">
+                <v:variable.set name="breakpoints" value="{settings.row.breakpoints.bootstrap3}" />
+            </f:case>
+            <f:case default="TRUE">
+                <v:variable.set name="breakpoints" value="{settings.row.breakpoints.bootstrap4}" />
+            </f:case>
+        </f:switch>
+
         <v:variable.set name="icon" value="{v:extension.path.resources(path: 'Icons/gridlayout_col2.gif')}" />
 
         <flux:form id="row" options="{icon:'{icon}', group: 'Container'}">
-            <flux:field.select name="breakpoint" items="xs,sm,md,lg" default="md" />
+            <flux:field.select name="breakpoint" items="{breakpoints}" default="md" />
             <flux:field.select name="additionalCssClasses" items="{settings.row.additionalCssClasses}" multiple='true' renderMode='checkbox' maxItems="9" />
             <flux:field.checkbox name="equal_height" default="0" />
             <flux:form.section name="columns">
@@ -48,7 +57,7 @@
     <f:section name="Preview">
         <p><strong><f:translate key="flux.row" /></strong></p>
         <f:comment>
-        <p><f:translate key="flux.row.fields.breakpoint" />: {breakpoint}</p>
+            <p><f:translate key="flux.row.fields.breakpoint" />: {breakpoint}</p>
         </f:comment>
         <flux:widget.grid />
     </f:section>
