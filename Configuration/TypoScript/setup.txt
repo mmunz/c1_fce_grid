@@ -30,7 +30,7 @@ plugin.tx_c1fcegrid{
                 bootstrap3 {
                     xs = xs (< 768px)
                     sm = sm (768px - 991px)
-                    md = lg (992px - 1199px)
+                    md = md (992px - 1199px)
                     lg = lg (> 1200px)
                 }
                 bootstrap4 {
