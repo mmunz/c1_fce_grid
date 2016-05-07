@@ -9,7 +9,9 @@
         <body>
             <!-- container -->
             <trans-unit id="flux.container">
-                <source>Container</source> <target></target></trans-unit>
+                <source>Container</source> 
+                <target></target>
+            </trans-unit>
             <trans-unit id="flux.container.description" xml:space="preserve" approved="yes">
                 <source>Container - max-width and center or padding</source>
             <target state="translated">Container mit einstellbarer Breite und weiteren Einstellungsmöglichkeiten</target></trans-unit>
@@ -19,6 +21,9 @@
             <trans-unit id="flux.container.fields.settings.container.bgColor" xml:space="preserve" approved="yes">
                 <source>Background Color</source>
             <target state="translated">Hintergrundfarbe</target></trans-unit>
+            <trans-unit id="flux.container.fields.settings.container.tag" xml:space="preserve">
+                <source>Tag, der für den Container benutzt wird</source>
+            </trans-unit>
             <trans-unit id="flux.container.fields.settings.container.id" xml:space="preserve" approved="yes">
                 <source>Container ID</source>
             <target state="translated">ID des Containers</target></trans-unit>

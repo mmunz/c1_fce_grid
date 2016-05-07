@@ -23,6 +23,10 @@ plugin.tx_c1fcegrid{
                 color3 = Magenta
                 color4 = Blue
             }
+            tags {
+                section = Section
+                div = Div
+            }
         }
         row {
             bgColors < plugin.tx_c1fcegrid.settings.container.bgColors
