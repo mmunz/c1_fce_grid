@@ -3,8 +3,8 @@ plugin.tx_c1fcegrid{
 	view {
 		label = Bootstrap Grid Elements
 		extensionKey = c1_fce_grid
-		partialRootPath = EXT:flux/Resources/Private/Partials/
-		layoutRootPath = EXT:fluidcontent/Resources/Private/Layouts/
+		partialRootPaths.c1_fce_grid = {$plugin.tx_c1fcegrid.view.partialRootPath}
+		layoutRootPaths.c1_fce_grid = {$plugin.tx_c1fcegrid.view.layoutRootPath}
         templateRootPaths.c1_fce_grid = {$plugin.tx_c1fcegrid.view.templateRootPath}
 	}
     settings {

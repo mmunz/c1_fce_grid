@@ -1,6 +1,8 @@
 plugin.tx_c1fcegrid {
     view {
+        partialRootPath = EXT:flux/Resources/Private/Partials/
         templateRootPath = EXT:c1_fce_grid/Resources/Private/Templates/
+        layoutRootPath = EXT:fluidcontent/Resources/Private/Layouts/
     }
     settings {
         # Number of grid columns: Set this to the same number used in your custom Bootstrap CSS if you've switched from the default 12-grid
