@@ -32,7 +32,6 @@ $EM_CONF[$_EXTKEY] = array(
         array(
             'core' => '7.6.0-7.6.99',
             'flux' => '',
-            'fluidcontent' => '',
             'vhs' => '',
         ),
         'conflicts' =>
